@@ -36,3 +36,14 @@ let cartCount = 0;
             const message = document.getElementById('message').value;
             alert(`Thank you, ${name}! Your message has been sent.`);
         }
+
+        function toggleAccountMenu() {
+            const menu = document.getElementById('account-menu');
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function login() {
+            const accountInfo = document.getElementById('account-info');
+            accountInfo.textContent = 'Logged in as: User123'; // Replace with actual user info
+            document.querySelector('#account-menu button').style.display = 'none';
+        }
